@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Javascript Day-1 task</title>
+    <style>
+        #container{
+            margin:10rem auto;
+            background-color:brown;
+            width:max-content;
+            border-radius: 2rem;
+            padding:1rem;
+        }
+        #heading,#demo{
+            text-align: center;
+            font-size: 1.8rem;
+            font-family: poppins,sans-serif;
+        }
+
+        #change-text{
+            padding:1rem;
+            border-radius:1rem;
+            background-color: black;
+            color:white;
+            width:fit-content;
+            display:block;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <main id="container">
+        <h1 id="heading">JAVASCRIPT DAY 1 - DOM BASICS</h1>
+        <p id="demo">
+            Welcome to the Day-1 understanding of DOM basics
+        </p>
+        <p id="demo">document.getElementById is used to find a HTML element using id </p>
+        <button id="change-text">Click me</button>
+    </main>
+
+    <script>
+        const heading = document.getElementById("heading");
+        const button = document.getElementById("change-text");
+        button.addEventListener("click", function () {
+            heading.textContent = "Heading Changed Successfully!";
+            heading.style.color="white";
+        });
+    </script>
+</body>
+
+</html>
