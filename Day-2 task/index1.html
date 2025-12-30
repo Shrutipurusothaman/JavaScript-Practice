@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript Day-2 Task</title>
+    <style>
+        #togglebtn {
+            padding: 1.5rem;
+            border-radius: 2rem;
+            width: fit-content;
+            background-color: azure;
+        }
+
+        .dark-mode {
+            background-color: #121212;
+            color: white;
+        }
+
+        .container {
+            text-align: center;
+            margin: 8rem auto;
+            background-color:burlywood;
+            padding:6rem;
+            width: fit-content;
+            height:auto;
+        }
+
+        p{
+            font-family: poppins,sans-serif;
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="container">
+        <h1>Day-2 Event & Event Listeners</h1>
+        <p>Events are the actions that happen in the broswer.</p>
+        <p>Event Listener is the code that waits for the event and reacts to it.</p>
+        <button id="togglebtn">Dark mode &#127769;</button>
+    </main>
+    <script>
+        const togglebutton = document.getElementById("togglebtn");
+        togglebutton.addEventListener("click", () => {
+            document.body.classList.toggle("dark-mode");
+            if (document.body.classList.contains("dark-mode")) {
+                togglebutton.textContent = "White mode ☀️";
+            } else {
+                togglebutton.textContent = "Dark mode 🌙";
+            }
+        });
+        togglebutton.addEventListener("mouseover", () => {
+            togglebutton.style.opacity = "0.6";
+        });
+         togglebutton.addEventListener("mouseout", () => {
+            togglebutton.style.opacity = "1";
+        });
+
+    </script>
+</body>
+
+</html>
