@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JavaScript Day-3 Task</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            height: 100vh;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        #loginform {
+            width: auto;
+            padding: 6rem;
+            border: 1px solid #ccc;
+            border-radius: 2rem;
+            background-color: #fff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        input {
+            display: block;
+            width: 100%;
+            padding: 1rem;
+            box-sizing: border-box;
+        }
+
+        .error {
+            color: red;
+            font-size: 1rem;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        @media (max-width: 400px) {
+            #loginform {
+                padding: 10rem;
+            }
+
+            input {
+                padding: 8rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h2>Login Form</h2>
+        <form id="loginform" onsubmit="return validateForm()">
+            <label for="username">Username</label><br>
+            <input type="text" id="username" placeholder="Enter your name"><br>
+            <p class="error" id="userError"></p>
+
+            <label for="password">Password</label><br>
+            <input type="password" id="password" placeholder="Enter your password"><br>
+            <p class="error" id="passError"></p>
+
+            <input type="submit" value="Submit">
+        </form>
+    </main>
+
+    <script>
+        function validateForm() {
+            let username = document.getElementById("username").value.trim();
+            let password = document.getElementById("password").value.trim();
+            let userError = document.getElementById("userError");
+            let passError = document.getElementById("passError");
+            userError.textContent = "";
+            passError.textContent = "";
+            let isValid = true;
+            if (username === "") {
+                userError.textContent = "Username is required";
+                isValid = false;
+            }
+            if (password === "") {
+                passError.textContent = "Password is required";
+                isValid = false;
+            }
+            if (isValid) {
+                alert("Form submitted successfully!");
+                return true;
+            } else {
+                return false;
+            }
+        }
+    </script>
+</body>
+
+</html>
