@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../images/background-image.jpg);
+    background-size: cover;
+    font-family: poppins,sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container h2 {
+    margin: 4rem auto;
+}
+
+.list-add {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    width: 400px;
+}
+
+.list-add input {
+    flex: 1;
+    padding: 1rem;
+    border-radius: 2rem;
+}
+
+.list-add .addbtn {
+    padding: 0.5rem 1rem;
+    color: white;
+    background-color:rgb(177, 173, 173);
+    border-radius: 0.2rem;
+}
+
+.list-box {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width:20rem;
+    background: #ffffff;
+    padding: 0.75rem 1rem;
+    margin-top: 0.75rem;
+    border-radius: 0.75rem;
+}
+
+
+.task-name {
+    flex: 1;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333;
+}
+
+.editbtn,
+.dltbtn {
+    padding: 0.4rem 0.7rem;
+    font-size: 0.8rem;
+    border: none;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.editbtn {
+    background-color: #ffc107;
+    color: #000;
+}
+
+.editbtn:hover {
+    background-color: #e0a800;
+}
+
+.dltbtn {
+    background-color: #dc3545;
+    color: #fff;
+}
+.dltbtn:hover {
+    background-color: #c82333;
+}
+
+
