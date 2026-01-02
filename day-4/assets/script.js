@@ -40,7 +40,6 @@ container.addEventListener("click", (e) => {
         inputField.type = "text";
         inputField.value = taskName.textContent;
         inputField.className = "edit-input";
-
         taskName.style.display = "none";
         listBox.insertBefore(inputField, editBtn);
         editBtn.textContent = "Save";

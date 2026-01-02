@@ -1,0 +1,51 @@
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 2rem;
+  width:40rem;
+  border: none;
+  text-align:left;
+  font-size: 1rem;
+  transition: 0.4s;
+}
+
+.accordion,.panel{
+    margin:auto;
+    display: block;
+    text-align: center;
+}
+
+.heading{
+    text-align: center;
+    font-size:1.5rem;
+    font-family: poppins,sans-serif;
+    margin-bottom: 4rem;
+}
+.panel p{
+    font-family: poppins,sans-serif;
+    font-size: 1rem;
+}
+
+.active,.accordion:hover {
+  background-color: #ccc;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  margin-left: 30rem;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 1rem;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
