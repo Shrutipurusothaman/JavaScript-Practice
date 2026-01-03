@@ -1,0 +1,30 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: poppins,sans-serif;
+    background-color:rgb(210, 205, 205);
+    margin:10rem auto;
+}
+h2 , p{
+   text-align: center;
+   font-size:1.5rem;
+   margin:2rem auto;
+}
+
+#menu{
+    list-style: none;
+    font-size: 1.5rem;
+    background-color: black;
+    color:white;
+    width: 300px;
+    text-align: center;
+    margin: auto;
+    cursor: pointer;
+}
+.selected {
+   background-color: #ffd54f;
+   font-weight: bold;
+}
