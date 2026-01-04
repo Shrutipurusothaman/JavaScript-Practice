@@ -45,9 +45,13 @@ function displayNotes() {
             localStorage.setItem("notes", JSON.stringify(notes));
             displayNotes();
         });
+        const actions = document.createElement("div");
+        actions.className = "actions";
 
-        li.appendChild(editBtn);
-        li.appendChild(deleteBtn);
+        actions.appendChild(editBtn);
+        actions.appendChild(deleteBtn);
+
+        li.appendChild(actions);
         notesList.appendChild(li);
     });
 }

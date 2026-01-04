@@ -1,9 +1,9 @@
- *{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
  }
- 
+
  body {
      font-family: Arial, sans-serif;
      background: #f2f2f2;
@@ -13,7 +13,7 @@
  .container {
      max-width: 40rem;
      margin: auto;
-     background:#5d31ae;
+     background: #5d31ae;
      padding: 20px;
      border-radius: 5px;
  }
@@ -25,7 +25,7 @@
 
  form {
      display: flex;
-     gap:1rem;
+     gap: 1rem;
  }
 
  input {
@@ -46,7 +46,7 @@
  ul {
      list-style: none;
      padding: 0;
-     margin-top:1rem;
+     margin-top: 1rem;
  }
 
  li {
@@ -64,4 +64,19 @@
      border: none;
      cursor: pointer;
      padding: 0.5rem 0.5rem;
+ }
+
+ .edit {
+     margin-left: 1rem;
+     background-color: #28a745;
+     color: white;
+     border: none;
+     padding: 0.5rem 1rem;
+     cursor: pointer;
+ }
+
+ .actions {
+     display: flex;
+     gap: 1rem;
+     margin-top: 0.5rem;
  }
